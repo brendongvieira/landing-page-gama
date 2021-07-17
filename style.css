@@ -114,6 +114,7 @@ span {
 }
 
 form {
+  font-family: "Poppins";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,31 +205,28 @@ figure img {
 }
 
 footer {
-  height: 3rem;
   width: 100vw;
   font-family: "Poppins";
   color: black;
   position: relative;
-  bottom: 0;
-  right: 0;
-  text-align: right;
+  text-align: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 footer .footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: right;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .footer-content .social-media {
@@ -239,11 +237,11 @@ footer .footer-content .social-media {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  margin: 3rem 0 1rem 0;
+  margin-top: 0;
   font-size: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer .footer-content .social-media li {
@@ -252,15 +250,15 @@ footer .footer-content .social-media li {
 
 footer .footer-content .social-media a {
   text-decoration: none;
-  color: white;
+  color: black;
+}
+
+footer .footer-content .social-media a:hover {
+  color: #fb8500;
 }
 
 footer .footer-content .social-media a i {
-  font-size: 1.1rem;
-}
-
-footer .footer-content p {
-  font-size: 0.8rem;
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 820px) {
@@ -363,6 +361,9 @@ footer .footer-content p {
     font-size: 2px;
     margin: 0;
   }
+  .card-container {
+    margin-right: 100px;
+  }
   figure {
     text-align: center;
   }
@@ -373,7 +374,10 @@ footer .footer-content p {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+}
+
+footer .footer-content .social-media {
+  margin-top: 250px;
 }
 /*# sourceMappingURL=style.css.map */

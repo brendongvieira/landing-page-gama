@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gama shoe store: Black Friday!</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
   <body>
-      <div class="blackfriday"><marquee behavior="scroll" direction="left" scrollamount="10">RECEBA SEU CUMPOM BLACK FRIDAY!</marquee></div>
+      <div class="blackfriday"><marquee behavior="scroll" direction="left" scrollamount="10">RECEBA SEU CUPOM BLACK FRIDAY!</marquee></div>
     <header class="container">
       <div class="logo">
         <img
@@ -29,14 +30,14 @@
     <div class="half-screen"></div>
     <main class="container">
       <section class="hero container">
-        <h1>Não é apenas sobre tênis</h1>
-        <p>É sobre identidade</p>
+        <h1>Não é apenas sobre moda</h1>
+        <p>É sobre <span>identidade</span></p>
         <form>
             <div class="formulario">
-            <p>Receba seu cumpom de desconto:</p>
+            <p>Receba seu cupom de desconto:</p>
             <input type="name" placeholder="Nome" id="input-name">
             <input type="email" placeholder="Email" id="input-email">
-          <button type="sumbit" id="button">Cadastrar</a>
+          <button onclick="store()" type="button" id="button">Cadastrar</a>
           </div>
         </form>
       </section>
@@ -48,6 +49,26 @@
         <p id="desconto2">em qualquer compra pelo site</p>
       </div>
     </main>
-    <footer>Git Linkedin Instagram</footer>
+    <div class="line"></div>
+    <footer>
+        <div class="footer-content">
+        <ul class="social-media">
+        <li><i class="fab fa-github"></i></li>
+        <li><i class="fab fa-linkedin-in"></i></li>
+        <li><i class="fab fa-instagram"></i></li>
+        </ul>
+    <p>Desenvolvido por Brendon para o desafio Gama Academy!</p>
+</div>
+    </footer>
   </body>
+  <script  type="text/javascript">
+
+    function store(){
+        var inputName= document.getElementById("input-name");
+       localStorage.setItem("Nome: ", inputName.value);
+       var inputEmail= document.getElementById("input-email");
+       localStorage.setItem("Email: ", inputEmail.value);
+    }
+  </script>
+  
 </html>

@@ -5,6 +5,6 @@ function store() {
   localStorage.setItem("Email: ", inputEmail.value);
 
   if (inputName.value !== "" && inputEmail.value !== "") {
-    alert("Oba! Entre no seu e-mail para resgatar o seu cupom.");
+    alert("Cadastrado! Você receberá um e-mail para resgatar o seu cupom.");
   }
 }

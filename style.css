@@ -363,6 +363,7 @@ footer .footer-content .social-media a i {
   }
   .card-container {
     margin-right: 100px;
+    z-index: 999;
   }
   figure {
     text-align: center;
@@ -374,10 +375,7 @@ footer .footer-content .social-media a i {
 }
 
 footer {
-  position: absolute;
-}
-
-footer .footer-content .social-media {
   margin-top: 250px;
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */
